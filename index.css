@@ -39,12 +39,6 @@ a {
   background: rgb(74, 158, 238);
   border-radius: 9999999px;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 /* //@Navbar */
 .navbar {
   background-color: #1e2222;
