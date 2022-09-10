@@ -59,7 +59,13 @@
 
     <!-- //@Home Component -->
     <div class="home" id="homeSection">
-      <div class="homeText">I am Naveen.<br />I am a Web Developer.</div>
+      <div class="homeTextContainer">
+        <div class="homeText">I am Naveen.<br />I am a Web Developer.</div>
+        <a href="#projectsSection" class="actionbtn">
+          <img src="./assets/images/suitcase.png" alt="SuitCase" class="actionbtnimg">
+          <div class="actionbtntext">View Projects</div>
+        </a>
+      </div>
       <div class="image"><img src="./assets/images/main.svg" alt="Main Image" /></div>
     </div>
 
@@ -155,136 +161,290 @@
       <div class="projectsContainer">
 
         <div class="project">
-          <div class="projectName">Chat App</div>
-          <img src="./assets/images/books.jpg" alt="Chat App" class="projectImage" />
-          <div class="techUsed">Tech used</div>
-          <div class="techs">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">Javascript</div>
-            <div class="tech">React</div>
-            <div class="tech">Redux</div>
-            <div class="tech">Nodejs</div>
-            <div class="tech">ExpressJs</div>
-            <div class="tech">MongoDB</div>           
+          <div class="projectImageContainer">
+            <img src="./assets/images/books.jpg" alt="Chat App" class="projectImage" />
           </div>
-          <div class="projectLinks">
-            <a href="https://github.com/naveen0-0/converseclient" target="_blank" rel="noopener noreferrer" title='View Code'>
-              <img src="./assets/images/github.png" alt="Github" />
-            </a>
-            <a href="https://converse-1910.netlify.app" target="_blank" rel="noopener noreferrer" title='Go to Site'>
-              <img src="./assets/images/live.png" alt="Live" />
-            </a>
+
+          <div class="projectInfo">
+            <div class="projectName">Chat App</div>
+            <div class="projectLinks">
+              <a href="https://github.com/naveen0-0/converseclient" target="_blank" title='View Code' class="projectLink">
+                <img src="./assets/images/github.png" alt="Github" />
+                <div>Code</div>
+              </a>
+              <a href="https://converse-1910.netlify.app" target="_blank" title='Go to Site' class="projectLink">
+                <img src="./assets/images/live.png" alt="Live" />
+                <div>Live</div>
+              </a>
+            </div>
+            <div class="techContainer">
+              <div class="techUsed">Tech used</div>
+              <div class="techs">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">Javascript</div>
+                <div class="tech">React</div>
+                <div class="tech">Redux</div>
+                <div class="tech">Nodejs</div>
+                <div class="tech">ExpressJs</div>
+                <div class="tech">MongoDB</div>           
+                <div class="tech">Socket.IO</div>           
+              </div>
+            </div>
+            <div class="extraprojectinfo">
+              <div class="extraprojectinfotitle">Functionality & Key info</div>
+              <ol class="orderedlist">
+                <li>Authentication Setup (SignUp and Login).</li>
+                <li>First Signup and create an account.</li>
+                <li>You will be redirected to the login page.</li>
+                <li>Login with your credentials.</li>
+                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
+                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
+                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
+                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
+                <li>You can send messages back and forth with your friend.</li>
+                <li>In the second tab, you can enter a group name and create a group.</li>
+                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
+                <li>By the way, LOGOUT button is in the bottom left corner.</li>
+              </ol>
+            </div>
           </div>
         </div>
 
+
         <div class="project">
-          <div class="projectName">Blog App</div>
-          <img src="./assets/images/blogposter.png" alt="Blog App" class="projectImage" />
-          <div class="techUsed">Tech used</div>
-          <div class="techs">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">Javascript</div>
-            <div class="tech">React</div>
-            <div class="tech">Redux</div>
-            <div class="tech">Nodejs</div>
-            <div class="tech">ExpressJs</div>
-            <div class="tech">MongoDB</div>
+          <div class="projectImageContainer">
+            <img src="./assets/images/blogposter.png" alt="Blog App" class="projectImage" />
           </div>
-          <div class="projectLinks">
-            <a href="https://github.com/naveen0-0/realblogclient" target="_blank" rel="noopener noreferrer" title='View Code'>
-              <img src="./assets/images/github.png" alt="Github" />
-            </a>
-            <a href="https://blogreal.netlify.app" target="_blank" rel="noopener noreferrer" title='Go to Site'>
-              <img src="./assets/images/live.png" alt="Live" />
-            </a>
+          <div class="projectInfo">
+            <div class="projectName">Blog App</div>
+            <div class="projectLinks">
+              <a href="https://github.com/naveen0-0/realblogclient" target="_blank" title='View Code' class="projectLink">
+                <img src="./assets/images/github.png" alt="Github" />
+                <div>Code</div>
+              </a>
+              <a href="https://blogreal.netlify.app" target="_blank" title='Go to Site' class="projectLink">
+                <img src="./assets/images/live.png" alt="Live" />
+                <div>Live</div>
+              </a>
+            </div>
+            <div class="techContainer">
+              <div class="techUsed">Tech used</div>
+              <div class="techs">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">Javascript</div>
+                <div class="tech">React</div>
+                <div class="tech">Redux</div>
+                <div class="tech">Nodejs</div>
+                <div class="tech">ExpressJs</div>
+                <div class="tech">MongoDB</div>           
+              </div>
+            </div>
+            <div class="extraprojectinfo">
+              <div class="extraprojectinfotitle">Functionality & Key info</div>
+              <ol class="orderedlist">
+                <li>Authentication Setup (SignUp and Login).</li>
+                <li>First Signup and create an account.</li>
+                <li>You will be redirected to the login page.</li>
+                <li>Login with your credentials.</li>
+                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
+                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
+                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
+                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
+                <li>You can send messages back and forth with your friend.</li>
+                <li>In the second tab, you can enter a group name and create a group.</li>
+                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
+                <li>By the way, LOGOUT button is in the bottom left corner.</li>
+              </ol>
+            </div>
           </div>
         </div>
 
+
         <div class="project">
-          <div class="projectName">News App</div>
-          <img src="./assets/images/newspaper.jpg" alt="News App" class="projectImage" />
-          <div class="techUsed">Tech used</div>
-          <div class="techs">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">Javascript</div>
-            <div class="tech">React</div>
+          <div class="projectImageContainer">
+            <img src="./assets/images/newspaper.jpg" alt="News App" class="projectImage" />
           </div>
-          <div class="projectLinks">
-            <a href="https://github.com/naveen0-0/news" target="_blank" rel="noopener noreferrer" title='View Code'>
-              <img src="./assets/images/github.png" alt="Github" />
-            </a>
-            <a href="https://newsroll.netlify.app" target="_blank" rel="noopener noreferrer" title='Go to Site'>
-              <img src="./assets/images/live.png" alt="Live" />
-            </a>
+          <div class="projectInfo">
+            <div class="projectName">News App</div>
+            <div class="projectLinks">
+              <a href="https://github.com/naveen0-0/news" target="_blank" title='View Code' class="projectLink">
+                <img src="./assets/images/github.png" alt="Github" />
+                <div>Code</div>
+              </a>
+              <a href="https://newsroll.netlify.app" target="_blank" title='Go to Site' class="projectLink">
+                <img src="./assets/images/live.png" alt="Live" />
+                <div>Live</div>
+              </a>
+            </div>
+            <div class="techContainer">
+              <div class="techUsed">Tech used</div>
+              <div class="techs">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">Javascript</div>
+                <div class="tech">React</div>         
+              </div>
+            </div>
+            <div class="extraprojectinfo">
+              <div class="extraprojectinfotitle">Functionality & Key info</div>
+              <ol class="orderedlist">
+                <li>Authentication Setup (SignUp and Login).</li>
+                <li>First Signup and create an account.</li>
+                <li>You will be redirected to the login page.</li>
+                <li>Login with your credentials.</li>
+                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
+                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
+                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
+                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
+                <li>You can send messages back and forth with your friend.</li>
+                <li>In the second tab, you can enter a group name and create a group.</li>
+                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
+                <li>By the way, LOGOUT button is in the bottom left corner.</li>
+              </ol>
+            </div>
           </div>
         </div>
 
+
         <div class="project">
-          <div class="projectName">Movie App</div>
-          <img src="./assets/images/movie.jpg" alt="Movie App" class="projectImage" />
-          <div class="techUsed">Tech used</div>
-          <div class="techs">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">Javascript</div>
-            <div class="tech">React</div>
+          <div class="projectImageContainer">
+            <img src="./assets/images/movie.jpg" alt="Movie App" class="projectImage" />
           </div>
-          <div class="projectLinks">
-            <a href="https://github.com/naveen0-0/newmovie" target="_blank" rel="noopener noreferrer" title='View Code'>
-              <img src="./assets/images/github.png" alt="Github" />
-            </a>
-            <a href="https://mynori.netlify.app" target="_blank" rel="noopener noreferrer" title='Go to Site'>
-              <img src="./assets/images/live.png" alt="Live" />
-            </a>
+          <div class="projectInfo">
+            <div class="projectName">Movie App</div>
+            <div class="projectLinks">
+              <a href="https://github.com/naveen0-0/newmovie" target="_blank" title='View Code' class="projectLink">
+                <img src="./assets/images/github.png" alt="Github" />
+                <div>Code</div>
+              </a>
+              <a href="https://mynori.netlify.app" target="_blank" title='Go to Site' class="projectLink">
+                <img src="./assets/images/live.png" alt="Live" />
+                <div>Live</div>
+              </a>
+            </div>
+            <div class="techContainer">
+              <div class="techUsed">Tech used</div>
+              <div class="techs">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">Javascript</div>
+                <div class="tech">React</div>         
+              </div>
+            </div>
+            <div class="extraprojectinfo">
+              <div class="extraprojectinfotitle">Functionality & Key info</div>
+              <ol class="orderedlist">
+                <li>Authentication Setup (SignUp and Login).</li>
+                <li>First Signup and create an account.</li>
+                <li>You will be redirected to the login page.</li>
+                <li>Login with your credentials.</li>
+                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
+                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
+                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
+                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
+                <li>You can send messages back and forth with your friend.</li>
+                <li>In the second tab, you can enter a group name and create a group.</li>
+                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
+                <li>By the way, LOGOUT button is in the bottom left corner.</li>
+              </ol>
+            </div>
           </div>
         </div>
 
+
         <div class="project">
-          <div class="projectName">FullStack Shop</div>
-          <img src="./assets/images/shoppp.png" alt="FullStack Shop" class="projectImage" />
-          <div class="techUsed">Tech used</div>
-          <div class="techs">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">Javascript</div>
-            <div class="tech">React</div>
-            <div class="tech">Redux</div>
-            <div class="tech">Nodejs</div>
-            <div class="tech">ExpressJs</div>
-            <div class="tech">MongoDB</div>
+          <div class="projectImageContainer">
+            <img src="./assets/images/shoppp.png" alt="FullStack Shop" class="projectImage" />
           </div>
-          <div class="projectLinks">
-            <a href="https://github.com/naveen0-0/ecommerceclient" target="_blank" rel="noopener noreferrer" title='View Code'>
-              <img src="./assets/images/github.png" alt="Github" />
-            </a>
-            <a href="https://xhoppie.netlify.app" target="_blank" rel="noopener noreferrer" title='Go to Site'>
-              <img src="./assets/images/live.png" alt="Live" />
-            </a>
+          <div class="projectInfo">
+            <div class="projectName">FullStack Shop</div>
+            <div class="projectLinks">
+              <a href="https://github.com/naveen0-0/ecommerceclient" target="_blank" title='View Code' class="projectLink">
+                <img src="./assets/images/github.png" alt="Github" />
+                <div>Code</div>
+              </a>
+              <a href="https://xhoppie.netlify.app" target="_blank" title='Go to Site' class="projectLink">
+                <img src="./assets/images/live.png" alt="Live" />
+                <div>Live</div>
+              </a>
+            </div>
+            <div class="techContainer">
+              <div class="techUsed">Tech used</div>
+              <div class="techs">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">Javascript</div>
+                <div class="tech">React</div>         
+              </div>
+            </div>
+            <div class="extraprojectinfo">
+              <div class="extraprojectinfotitle">Functionality & Key info</div>
+              <ol class="orderedlist">
+                <li>Authentication Setup (SignUp and Login).</li>
+                <li>First Signup and create an account.</li>
+                <li>You will be redirected to the login page.</li>
+                <li>Login with your credentials.</li>
+                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
+                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
+                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
+                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
+                <li>You can send messages back and forth with your friend.</li>
+                <li>In the second tab, you can enter a group name and create a group.</li>
+                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
+                <li>By the way, LOGOUT button is in the bottom left corner.</li>
+              </ol>
+            </div>
           </div>
         </div>
-        
+
+
         <div class="project">
-          <div class="projectName">Covid Tracker</div>
-          <img src="./assets/images/covid.jpg" alt="Covid Tracker" class="projectImage" />
-          <div class="techUsed">Tech used</div>
-          <div class="techs">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">Javascript</div>
-            <div class="tech">React</div>
+          <div class="projectImageContainer">
+            <img src="./assets/images/covid.jpg" alt="Covid Tracker" class="projectImage" />
           </div>
-          <div class="projectLinks">
-            <a href="https://github.com/naveen0-0/trackerc19" target="_blank" rel="noopener noreferrer" title='View Code'>
-              <img src="./assets/images/github.png" alt="Github" />
-            </a>
-            <a href="https://trackerc19.netlify.app" target="_blank" rel="noopener noreferrer" title='Go to Site'>
-              <img src="./assets/images/live.png" alt="Live" />
-            </a>
+          <div class="projectInfo">
+            <div class="projectName">Covid Tracker</div>
+            <div class="projectLinks">
+              <a href="https://github.com/naveen0-0/trackerc19" target="_blank" title='View Code' class="projectLink">
+                <img src="./assets/images/github.png" alt="Github" />
+                <div>Code</div>
+              </a>
+              <a href="https://trackerc19.netlify.app" target="_blank" title='Go to Site' class="projectLink">
+                <img src="./assets/images/live.png" alt="Live" />
+                <div>Live</div>
+              </a>
+            </div>
+            <div class="techContainer">
+              <div class="techUsed">Tech used</div>
+              <div class="techs">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">Javascript</div>
+                <div class="tech">React</div>         
+              </div>
+            </div>
+            <div class="extraprojectinfo">
+              <div class="extraprojectinfotitle">Functionality & Key info</div>
+              <ol class="orderedlist">
+                <li>Authentication Setup (SignUp and Login).</li>
+                <li>First Signup and create an account.</li>
+                <li>You will be redirected to the login page.</li>
+                <li>Login with your credentials.</li>
+                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
+                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
+                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
+                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
+                <li>You can send messages back and forth with your friend.</li>
+                <li>In the second tab, you can enter a group name and create a group.</li>
+                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
+                <li>By the way, LOGOUT button is in the bottom left corner.</li>
+              </ol>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 

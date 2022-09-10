@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 
 /* //@ Global */
@@ -92,13 +93,14 @@ a {
 }
 
 .resume {
+  letter-spacing: 0.5px;
   background: linear-gradient(to left, rgb(134, 69, 62), rgb(36, 55, 90));
-  width: 120px;
+  width: 100px;
   padding: 5px 10px;
-  color: rgb(216, 216, 216);
+  color: black;
   text-decoration: none;
   border-radius: 999999999px;
-  font-family: "Fira Code";
+  font-family: 'Bangers', cursive;
   font-size: 16px;
   display: flex;
   justify-content: space-around;
@@ -188,13 +190,20 @@ a {
 }
 
 .image {
-  flex: 1;
+  flex: 2;
 }
 
 .image img {
   display: block;
   width: 80%;
   margin: auto;
+}
+.homeTextContainer{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeText {
@@ -208,6 +217,39 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.actionbtn{
+  background: linear-gradient(to left, rgb(134, 69, 62), rgb(36, 55, 90));
+  padding: 10px 20px ;
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  border-radius: 999999999px;
+  font-family: "Fira Code";
+  font-size: 16px;
+  box-shadow: 3px 3px 3px rgb(19, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actionbtn:hover {
+  background: linear-gradient(to left, rgb(155, 81, 72), rgb(41, 61, 99));
+}
+
+.actionbtn:active {
+  box-shadow: none;
+}
+
+.actionbtnimg{
+  width: 20px;
+}
+
+.actionbtntext{
+   margin-left: 10px;
+   color: black;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (max-width : 900px) {
@@ -313,46 +355,63 @@ a {
 }
 
 .projectsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 85%;
-  margin: 0px auto 10px;
-  gap: 30px;
+  margin: auto;
 }
 
 .projectName {
-  font-size: 22px;
+  font-size: 30px;
   padding: 5px;
   text-align: center;
   font-family: "Fira Code";
-  color: whitesmoke;
+  color: #4f659e;
+  font-weight: bold;
 }
 
 .project {
   border: 5px solid #1e2222;
   box-shadow: 3px 3px 3px #111;
   border-radius: 5px;
-  padding: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.project img {
-  width: 200px;
-  height: 100px;
-  display: block;
-  margin: auto;
-  border-radius: 5px;
+.projectImageContainer{
+  flex: 1;
+}
+
+.projectImage{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.projectInfo{
+  flex: 2;
+  padding: 10px;
 }
 
 .projectLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 200px;
-  margin: auto;
-  padding: 10px;
+}
+
+.projectLink{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  font-family: "Fira Code";
+  font-size: 14px;
+  padding: 4px 10px;
+  color: rgb(182, 182, 182);
+  box-shadow: 3px 3px 3px rgb(19, 18, 18);
+
+  border: 2px solid #1e2222;
+  margin: 5px;
+  border-radius: 99999999px;
 }
 
 .projectLinks img {
@@ -362,9 +421,11 @@ a {
 
 .techUsed {
   font-family: "Fira Code";
+    font-weight: bold;
   text-align: center;
-  color: rgb(205, 205, 206);
+  color: #4f659e;
   margin: 10px 0px;
+  font-size: 18px;
 }
 
 .techs {
@@ -379,10 +440,20 @@ a {
   padding: 4px 10px;
   color: rgb(182, 182, 182);
   box-shadow: 3px 3px 3px rgb(19, 18, 18);
-  
   border: 2px solid #1e2222;
   margin: 5px;
   border-radius: 99999999px;
+}
+
+.extraprojectinfotitle{
+  text-align: center;
+  color: #4f659e;
+  font-size: 18px;
+    font-weight: bold;
+}
+
+.orderedlist li{
+  color: rgb(173, 173, 173);
 }
 
 /* //@ Contact Form */
