@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+
+/* //@ Global */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: #151616;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4d4c4c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(74, 158, 238);
+  border-radius: 9999999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* //@Navbar */
+.navbar {
+  background-color: #1e2222;
+  box-shadow: 3px 3px 3px #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  z-index:10
+}
+
+.title {
+  text-decoration: none;
+  padding: 0px 20px;
+}
+
+
+.titleText{
+  font-family: 'Allura', cursive;
+  font-size: 3rem;
+  background: linear-gradient(to right, #845ec2,
+      #d65db1,
+      #ff6f91,
+      #ff9671,
+      #ffc75f,
+      #f9f871);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  animation: bg-animate 10s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes bg-animate {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+.resume {
+  background: linear-gradient(to left, rgb(134, 69, 62), rgb(36, 55, 90));
+  width: 120px;
+  padding: 5px 10px;
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  border-radius: 999999999px;
+  font-family: "Fira Code";
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 3px rgb(19, 18, 18);
+}
+
+.resume img{
+  width: 20px;
+}
+
+.resume:hover {
+  background: linear-gradient(to left, rgb(185, 97, 87), rgb(53, 81, 133));
+}
+
+.burger {
+  width: 30px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: whitesmoke;
+  margin: auto;
+}
+
+.navlinks{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+.navlink{
+  color: rgb(200, 200, 200);
+  font-family: "Fira Code";
+}
+
+@media screen and (min-width:900px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width : 900px) {
+  .navlinks{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 80px;
+    right: 60px;
+    background-color: #111;
+    padding: 10px 30px;
+    height: 200px;
+    box-shadow: 3px 3px 3px #223;
+    border-radius: 5px;
+  }
+}
+
+
+/* //@Home */
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 88vh;
+  padding: 10px;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.homeText {
+  font-family: 'Allura', cursive;
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 80px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width : 900px) {
+  .home {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .image {
+    margin-top: 15px;
+  }
+}
+
+/* //@ About component */
+.aboutTitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 10px 5px;
+  margin: 10px 0px 20px;
+  color: whitesmoke;
+  font-family: "Fira Code";
+}
+
+.aboutDescription {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid #1e2222;
+  box-shadow: 3px 2px 2px #111;
+  font-size: 16px;
+  font-family: "Fira Code";
+  border-radius: 5px;
+}
+
+.aboutDescription p {
+  text-indent: 20px;
+  padding: 20px;
+  color: rgb(187, 183, 183);
+  font-family: "Fira Code";
+}
+
+@media screen and (max-width:450px) {
+  .aboutDescription {
+    width: 95%;
+  }
+
+  .about{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .about{
+    margin-top: 80px;
+  }
+}
+
+
+/* //@ Skills */
+.skillTitle {
+  font-size: 32px;
+  margin: 0px 0px 20px;
+  text-align: center;
+  padding: 25px 25px 10px;
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: "Fira Code";
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 80%;
+  margin: 0px auto 10px;
+  gap: 20px;
+}
+
+.skillImage {
+  width: 70px;
+  display: block;
+  margin: auto;
+}
+
+.skillName {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Fira Code";
+  color: whitesmoke;
+}
+
+.skill {
+  box-shadow: 3px 3px 3px #111;
+  padding: 20px;
+  border-radius: 5px;
+  border: 5px solid #1e2222;
+}
+
+/* //@ Projects */
+.projectsTitle {
+  font-size: 32px;
+  margin: 0px 0px 20px;
+  padding: 25px 25px 10px;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: "Fira Code";
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 85%;
+  margin: 0px auto 10px;
+  gap: 30px;
+}
+
+.projectName {
+  font-size: 22px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Fira Code";
+  color: whitesmoke;
+}
+
+.project {
+  border: 5px solid #1e2222;
+  box-shadow: 3px 3px 3px #111;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.project img {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.projectLinks img {
+  width: 25px;
+  height: 25px;
+}
+
+.techUsed {
+  font-family: "Fira Code";
+  text-align: center;
+  color: rgb(205, 205, 206);
+  margin: 10px 0px;
+}
+
+.techs {
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech {
+  font-family: "Fira Code";
+  font-size: 14px;
+  padding: 4px 10px;
+  color: rgb(182, 182, 182);
+  box-shadow: 3px 3px 3px rgb(19, 18, 18);
+  
+  border: 2px solid #1e2222;
+  margin: 5px;
+  border-radius: 99999999px;
+}
+
+/* //@ Contact Form */
+.formTitle {
+  font-size: 32px;
+  text-align: center;
+  padding: 25px 25px 10px;
+  font-weight: bold;
+  margin: 0px 0px 20px;
+  color: whitesmoke;
+  font-family: "Fira Code";
+}
+
+.form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  height: 450px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.name,
+.email {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Fira Code', monospace;
+  background-color: #111;
+  color: whitesmoke;
+}
+
+.subject,
+.message {
+  outline: none;
+  background-color: #111;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Fira Code', monospace;
+  resize: none;
+  color: whitesmoke;
+}
+
+.formsubmit {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  background: linear-gradient(to right, cornflowerblue, royalblue);
+  box-shadow: 3px 3px 4px #222;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formsubmit:active {
+  box-shadow: none;
+}
+
+.formsubmit:hover {
+  background: linear-gradient(to left, cornflowerblue, royalblue);
+}
+
+.mediaLinks {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.mediaLinks img {
+  width: 30px;
+}
+
+.spinner {
+  width: 25px;
+}
+
+
+@media screen and (max-width:450px) {
+  .form {
+    width: 95%;
+  }
+}
