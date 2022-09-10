@@ -7,7 +7,13 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <title>Naveen</title>
   <link rel="stylesheet" href="./index.css">
-  <script src="./index.js" defer></script>
+  <script src="./index.js" defer type="module"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('p4D5uyCTOzuEE75ss');
+    })();
+  </script>
 </head>
 <body>
   <!-- //@ NavBar -->
@@ -286,13 +292,14 @@
     <div class="formContainer" id="contactSection">
       <div class="formTitle">Contact Form</div>
     
-      <form method="POST" class="form" onsubmit="function log(){ console.log('Form Submitted') }">
+      <form method="POST" class="form" action="#" id="form">
         <input 
           type="text" 
           name="name" 
           placeholder="Enter your name" 
           required 
           class="name"
+          id="username"
         />
 
         <input 
@@ -301,6 +308,7 @@
           placeholder="Enter your email" 
           required 
           class="email"
+          id="email"
         />
 
         <textarea 
@@ -310,6 +318,7 @@
           placeholder="Enter the Subject" 
           required 
           class="subject"
+          id="subject"
         ></textarea>
 
         <textarea 
@@ -319,9 +328,13 @@
           placeholder="Enter the Message" 
           required 
           class="message"
+          id="message"
           ></textarea>
         
-        <button type='submit' class="formsubmit">Send</button>
+        <button type='submit' class="formsubmit" id="formSubmit">
+          <div class="submittext" id="submittext">Send</div>
+          <div class="loader" id="loader"></div>
+        </button>
       </form>
     
       <div class="mediaLinks">
@@ -337,6 +350,18 @@
           <img src="./assets/images/github.png" alt="Github" />
         </a>
       </div>
+
+
+      <div class="success" id="success">
+        <img src="./assets/images/checked.png" alt="checked">
+        <div class="msg">Message Successfully Sent</div>
+      </div>
+      <div class="error" id="error">
+        <img src="./assets/images/cancel.png" alt="Cancel">
+        <div class="msg">Error Occured</div>
+      </div>  
+
     </div>
+
 </body>
 </html>

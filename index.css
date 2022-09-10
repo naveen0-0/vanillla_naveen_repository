@@ -114,6 +114,10 @@ a {
   background: linear-gradient(to left, rgb(185, 97, 87), rgb(53, 81, 133));
 }
 
+.resume:active{
+  box-shadow: none;
+}
+
 .burger {
   width: 30px;
   height: 18px;
@@ -329,7 +333,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: relative;
 }
 
 .project img {
@@ -380,6 +383,11 @@ a {
 }
 
 /* //@ Contact Form */
+.formContainer{
+  position: relative;
+  overflow: hidden;
+}
+
 .formTitle {
   font-size: 32px;
   text-align: center;
@@ -400,7 +408,6 @@ a {
   background-color: #222;
   padding: 20px;
   border-radius: 10px;
-  position: relative;
 }
 
 .name,
@@ -427,12 +434,12 @@ a {
 }
 
 .formsubmit {
-  width: 100px;
+  /* width: 100px; */
   height: 40px;
   outline: none;
   border: none;
   padding: 8px 10px;
-  background: linear-gradient(to right, cornflowerblue, royalblue);
+  background: linear-gradient(to left, rgb(134, 69, 62), rgb(36, 55, 90));
   box-shadow: 3px 3px 4px #222;
   border-radius: 50px;
   color: white;
@@ -449,7 +456,7 @@ a {
 }
 
 .formsubmit:hover {
-  background: linear-gradient(to left, cornflowerblue, royalblue);
+  background: linear-gradient(to left, rgb(185, 97, 87), rgb(53, 81, 133));
 }
 
 .mediaLinks {
@@ -473,5 +480,65 @@ a {
 @media screen and (max-width:450px) {
   .form {
     width: 95%;
+  }
+}
+
+.success,.error{
+  background-color: #111;
+  color: rgb(196, 196, 196);
+  font-family: "Fira Code";
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 5px #222;
+  transform: translateX(200%);
+  transition: transform 500ms ease-in-out;
+}
+
+.success{
+  border: 2px solid rgb(35, 114, 88);
+}
+
+.error{
+  border: 2px solid rgb(128, 47, 36);
+}
+
+.success img,.error img{
+  width: 30px;
+}
+
+.msg{
+  margin-left: 10px;
+}
+
+.displaymsg{
+  transform: translateX(0%);
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  /* Light grey */
+  border-top: 2px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
