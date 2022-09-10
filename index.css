@@ -439,6 +439,10 @@ a {
   border-radius: 99999999px;
 }
 
+.extraprojectinfo{
+  margin-top: 20px;
+}
+
 .extraprojectinfotitle{
   text-align: center;
   color: #4f659e;
