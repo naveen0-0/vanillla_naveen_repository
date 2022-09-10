@@ -458,6 +458,7 @@ a {
 .formContainer{
   position: relative;
   overflow: hidden;
+  box-shadow: 3px 3px 4px #222;
 }
 
 .formTitle {
