@@ -9,6 +9,8 @@ const error = document.getElementById('error')
 const submittext = document.getElementById('submittext')
 const spinner = document.getElementById('loader')
 const submitbtn =  document.getElementById("formSubmit")
+const burger = document.getElementById("burger")
+const navlinks = document.getElementById('navlinks')
 
 function sendMail(e){
   e.preventDefault()
@@ -42,4 +44,11 @@ function sendMail(e){
         submittext.style.display = "block"
         submitbtn.removeAttribute('disabled')
     })
+}
+
+
+burger.addEventListener('click', toggleNavBar)
+
+function toggleNavBar(){
+  navlinks.classList.toggle('showNav')
 }
