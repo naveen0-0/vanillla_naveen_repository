@@ -152,7 +152,7 @@ a {
 }
 
 .navlink:hover{
-  color: rgb(187, 114, 206);
+  color: #fff;
 }
 
 
@@ -162,8 +162,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
-  margin: 100px 0px;
+  padding: 120px 10px;
 }
 
 .image {
@@ -188,7 +187,7 @@ a {
   height: 100%;
   text-align: center;
   color: whitesmoke;
-  font-size: clamp(40px, 1vw + 5rem, 220px);
+  font-size: clamp(40px, 6vw + 2rem, 100px);
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -378,17 +377,19 @@ a {
 
 .techUsed {
   font-family: "Fira Code";
-    font-weight: bold;
+  font-weight: bold;
   text-align: center;
   color: #88a5ee;
   margin: 10px 0px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .techs {
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech {
@@ -409,8 +410,8 @@ a {
 .extraprojectinfotitle{
   text-align: center;
   color: #88a5ee;
-  font-size: 18px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .orderedlist li{
