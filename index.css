@@ -39,6 +39,13 @@ a {
   background: rgb(74, 158, 238);
   border-radius: 9999999px;
 }
+
+/* .mainContainer{
+  max-width: 1400px;
+  margin: auto;
+  border: 5px solid #222;
+} */
+
 /* //@Navbar */
 .navbar {
   background-color: #1e2222;
@@ -91,7 +98,7 @@ a {
   background: linear-gradient(to left, rgb(134, 69, 62), rgb(36, 55, 90));
   width: 100px;
   padding: 5px 10px;
-  color: black;
+  color: rgb(190, 190, 190);
   text-decoration: none;
   border-radius: 999999999px;
   font-family: 'Bangers', cursive;
@@ -107,7 +114,7 @@ a {
 }
 
 .resume:hover {
-  background: linear-gradient(to left, rgb(185, 97, 87), rgb(53, 81, 133));
+  background: linear-gradient(to left, rgb(155, 81, 72), rgb(41, 61, 99));
 }
 
 .resume:active{
@@ -148,30 +155,6 @@ a {
   color: rgb(187, 114, 206);
 }
 
-@media screen and (min-width:900px) {
-  .burger {
-    display: none;
-  }
-}
-
-@media screen and (max-width : 900px) {
-  .navlinks{
-    display: none;
-    position: absolute;
-    flex-direction: column;
-    top: 80px;
-    right: 10%;
-    background-color: #111;
-    padding: 10px 30px;
-    height: 250px;
-    border-radius: 0px 0px 5px 5px;
-    border:5px solid #222;
-  }
-
-  .showNav{
-    display: flex;
-  }
-}
 
 
 /* //@Home */
@@ -179,8 +162,8 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 88vh;
   padding: 10px;
+  margin: 100px 0px;
 }
 
 .image {
@@ -193,7 +176,6 @@ a {
   margin: auto;
 }
 .homeTextContainer{
-  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,7 +188,7 @@ a {
   height: 100%;
   text-align: center;
   color: whitesmoke;
-  font-size: clamp(40px, 10vw + 1rem, 80px);
+  font-size: clamp(40px, 1vw + 5rem, 220px);
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -246,15 +228,7 @@ a {
   letter-spacing: 0.5px;
 }
 
-@media screen and (max-width : 900px) {
-  .home{
-    height: max-content;
-    margin-top: 80px;
-  }
-  .image {
-    display: none;
-  }
-}
+
 
 /* //@ About component */
 .aboutTitle {
@@ -283,18 +257,6 @@ a {
   padding: 20px;
   color: rgb(187, 183, 183);
   font-family: "Fira Code";
-}
-
-@media screen and (max-width:500px) {
-  .aboutDescription {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width:900px) {
-  .about{
-    margin-top: 80px;
-  }
 }
 
 
@@ -349,7 +311,7 @@ a {
 }
 
 .projectsContainer {
-  width: 95%;
+  width: 80%;
   margin: auto;
 }
 
@@ -367,6 +329,7 @@ a {
   box-shadow: 3px 3px 3px #111;
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
 }
 
@@ -377,8 +340,8 @@ a {
 .projectImage{
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  border-radius: 5px 0px 0px 5px;
+  height: 200px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .projectInfo{
@@ -472,7 +435,7 @@ a {
 }
 
 .form {
-  width: 85%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -550,11 +513,6 @@ a {
 }
 
 
-@media screen and (max-width:450px) {
-  .form {
-    width: 95%;
-  }
-}
 
 .success,.error{
   background-color: #111;
@@ -596,9 +554,7 @@ a {
 
 .loader {
   border: 2px solid #f3f3f3;
-  /* Light grey */
   border-top: 2px solid #3498db;
-  /* Blue */
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -613,5 +569,49 @@ a {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+/* //@ Media Query */
+@media screen and (min-width:900px) {
+  .burger {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width : 900px) {
+  .navlinks {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 80px;
+    right: 10%;
+    background-color: #111;
+    padding: 10px 30px;
+    height: 250px;
+    border-radius: 0px 0px 5px 5px;
+    border: 5px solid #222;
+  }
+
+  .showNav {
+    display: flex;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .aboutDescription {
+    width: 95%;
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  .projectsContainer {
+    width: 95%;
   }
 }
