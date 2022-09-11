@@ -11,6 +11,7 @@ const spinner = document.getElementById('loader')
 const submitbtn =  document.getElementById("formSubmit")
 const burger = document.getElementById("burger")
 const navlinks = document.getElementById('navlinks')
+const navlink = document.getElementsByClassName('navlink')
 
 function sendMail(e){
   e.preventDefault()
@@ -51,4 +52,8 @@ burger.addEventListener('click', toggleNavBar)
 
 function toggleNavBar(){
   navlinks.classList.toggle('showNav')
+}
+
+for (let i = 0; i < navlink.length; i++) {
+  navlink[i].addEventListener('click',toggleNavBar)
 }
