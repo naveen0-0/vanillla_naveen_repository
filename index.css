@@ -318,6 +318,7 @@ a {
 .projectName {
   font-size: 30px;
   padding: 5px;
+  margin: 10px;
   text-align: center;
   font-family: "Fira Code";
   color: #88a5ee;
@@ -331,20 +332,17 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  overflow: hidden;
 }
 
-.projectImageContainer{
-  flex: 1;
-}
 
 .projectImage{
   object-fit: cover;
   width: 100%;
-  height: 200px;
 }
 
+
 .projectInfo{
-  flex: 2;
   padding: 10px;
 }
 
