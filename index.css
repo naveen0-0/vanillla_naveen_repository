@@ -306,6 +306,10 @@ a {
 .projectsContainer {
   width: 80%;
   margin: auto;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .projectName {
@@ -324,7 +328,6 @@ a {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -605,5 +608,6 @@ a {
 
   .projectsContainer {
     width: 95%;
+    display: block;
   }
 }
