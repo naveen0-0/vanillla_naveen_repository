@@ -12,6 +12,7 @@ const submitbtn =  document.getElementById("formSubmit")
 const burger = document.getElementById("burger")
 const navlinks = document.getElementById('navlinks')
 const navlink = document.getElementsByClassName('navlink')
+const time = document.getElementById('time')
 
 function sendMail(e){
   e.preventDefault()
@@ -47,13 +48,19 @@ function sendMail(e){
     })
 }
 
-
-burger.addEventListener('click', toggleNavBar)
-
 function toggleNavBar(){
   navlinks.classList.toggle('showNav')
 }
 
+
+burger.addEventListener('click', toggleNavBar)
+
 for (let i = 0; i < navlink.length; i++) {
   navlink[i].addEventListener('click',toggleNavBar)
 }
+
+
+const date = new Date();
+const getTime = date.getFullYear() - 2018;
+const textNode = document.createTextNode(getTime)
+time.appendChild(textNode)
