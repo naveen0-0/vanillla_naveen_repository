@@ -26,7 +26,7 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
 }
 
 /* Track */
@@ -36,16 +36,9 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(74, 158, 238);
+  background: rgb(165, 165, 165);
   border-radius: 9999999px;
 }
-
-/* .mainContainer{
-  max-width: 1400px;
-  margin: auto;
-  border: 5px solid #222;
-} */
-
 /* //@Navbar */
 .navbar {
   background-color: #1e2222;
