@@ -1,505 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <meta name="description" content="This is Naveen Kumar Reddy's Personal Portfolio">
-  <title>Naveen</title>
-  <link rel="stylesheet" href="./index.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init('p4D5uyCTOzuEE75ss');
-    })();
-  </script>
-  <script src="./index.js" defer type="module"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="This is Naveen Kumar Reddy's Personal Portfolio"
+    />
+    <title>Naveen</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("p4D5uyCTOzuEE75ss");
+      })();
+    </script>
+    <script src="./index.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <!-- //@ NavBar -->
+      <div class="navbar">
+        <div class="title">
+          <div class="titleText">
+            <a href="#homeSection">Naveen</a>
+          </div>
+        </div>
 
-  <div class="mainContainer">
-  <!-- //@ NavBar -->
-    <div class="navbar">
-      <div class="title">
-        <div class="titleText">
-          <a href="#homeSection">Naveen</a>
+        <div class="navlinks" id="navlinks">
+          <div class="navlink">
+            <a href="#aboutSection">about</a>
+          </div>
+
+          <div class="navlink">
+            <a href="#skillsSection">skills</a>
+          </div>
+
+          <div class="navlink">
+            <a href="#projectsSection">projects</a>
+          </div>
+
+          <div class="navlink">
+            <a href="#contactSection">contact</a>
+          </div>
+
+          <div class="navlink" title="Download the Resume">
+            <a
+              href="./assets/pdfs/naveenresume.pdf"
+              class="resume"
+              target="_blank"
+              download="Naveen_Kumar_Reddy_Resume"
+            >
+              <img src="./assets/images/download.webp" alt="download" />
+              <div>Resume</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </div>
-    
-      <div class="navlinks" id="navlinks">
-        <div class="navlink">
-          <a href="#aboutSection">about</a>
-        </div>
-    
-        <div class="navlink">
-          <a href="#skillsSection">skills</a>
-        </div>
-    
-        <div class="navlink">
-          <a href="#projectsSection">projects</a>
-        </div>
-    
-    
-        <div class="navlink">
-          <a href="#contactSection">contact</a>
-        </div>
 
-        <div class="navlink" title="Download the Resume">
-          <a href="./assets/pdfs/naveenresume.pdf" class="resume" target="_blank" download="Naveen_Kumar_Reddy_Resume">
-            <img src="./assets/images/download.png" alt="download"  />
-            <div>Resume</div>
+      <!-- //@Home Component -->
+      <div class="home" id="homeSection">
+        <div class="homeTextContainer">
+          <div class="homeText">I am Naveen.<br />I am a Web Developer.</div>
+          <a href="#projectsSection" class="actionbtn">
+            <img
+              src="./assets/images/suitcase.webp"
+              alt="SuitCase"
+              class="actionbtnimg"
+            />
+            <div class="actionbtntext">View Projects</div>
           </a>
         </div>
       </div>
-    
-      <div class="burger" id="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </div>
 
-    <!-- //@Home Component -->
-    <div class="home" id="homeSection">
-      <div class="homeTextContainer">
-        <div class="homeText">I am Naveen.<br />I am a Web Developer.</div>
-        <a href="#projectsSection" class="actionbtn">
-          <img src="./assets/images/suitcase.png" alt="SuitCase" class="actionbtnimg"  />
-          <div class="actionbtntext">View Projects</div>
-        </a>
-      </div>
-    </div>
+      <!-- //@ About -->
+      <div class="about" id="aboutSection">
+        <div class="aboutTitle">About Me</div>
+        <div class="aboutDescription">
+          <p>
+            I am Naveen Kumar Reddy. I live in Andhra Pradesh. I am a Full Stack
+            Javascript Developer, with experience in React, Nodejs and MongoDB.I
+            consider myself a forever student. I actually find joy in learning
+            and doing new things.
+          </p>
+          <p>
+            I like cricket, football and tennis. During these corona days, i
+            picked up chess as a hobby and started to get good at it.
+          </p>
+          <p>
+            I started to learn programming <span id="time"></span> years ago. I
+            initially went into data scientist route and started to learn python
+            and played with Numpy module. But, I switched to wev development
+            because, working with numbers is kind of boring. I prefered to work
+            in the creative field.
+          </p>
 
-    <!-- //@ About -->
-    <div class="about" id="aboutSection">
-      <div class="aboutTitle">About Me</div>
-      <div class="aboutDescription">
-        <p>
-          I am Naveen Kumar Reddy. I live in Andhra Pradesh. I am a Full Stack Javascript Developer, with experience in
-          React, Nodejs and MongoDB.I consider myself a forever student. I actually find joy in learning and doing new
-          things.
-        </p>
-        <p>
-          I like cricket, football and tennis. During these corona days, i picked up chess as a hobby and started to get
-          good at it.
-        </p>
-        <p>
-          I started to learn programming <span id="time"></span> years ago. I initially went into data scientist route and started to
-          learn python and played with Numpy module. But, I switched to wev development because, working with numbers is
-          kind of boring. I prefered to work in the creative field.
-        </p>
-    
-        <p>
-          I also do have some beginner experience in languages like C++,Java.
-        </p>
-      </div>
-    </div>
-
-    <!-- //@ Skills Section -->
-    <div id='skillsSection' class="skills">
-      <div class="skillTitle">Skills</div>
-      <div class="skillsContainer">
-        <div class="skill">
-          <img src="./assets/images/html.png" alt="Html" class="skillImage" />
-          <div class="skillName">HTML</div>
-        </div>
-        
-        <div class="skill">
-          <img src="./assets/images/css.png" alt="Css" class="skillImage" />
-          <div class="skillName">CSS</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/javascript.png" alt="Javascript" class="skillImage" />
-          <div class="skillName">JavaScript</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/bootstrap.png" alt="Bootstrap" class="skillImage" />
-          <div class="skillName">Bootstrap</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/jquery.png" alt="Jquery" class="skillImage" />
-          <div class="skillName">jQuery</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/sass.png" alt="Sass" class="skillImage" />
-          <div class="skillName">Sass</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/react.png" alt="React" class="skillImage" />
-          <div class="skillName">React</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/redux.png" alt="Redux" class="skillImage" />
-          <div class="skillName">Redux</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/nodejs.png" alt="NodeJs" class="skillImage" />
-          <div class="skillName">Node.js</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/express.png" alt="ExpressJs" class="skillImage" />
-          <div class="skillName">Express.js</div>
-        </div>
-
-        <div class="skill">
-          <img src="./assets/images/mongodb.png" alt="MongoDB" class="skillImage" />
-          <div class="skillName">MongoDB</div>
+          <p>
+            I also do have some beginner experience in languages like C++,Java.
+          </p>
         </div>
       </div>
-    </div>
 
-    <!-- //@ Projects -->
-    <div id='projectsSection' class="projects">
-      <div class="projectsTitle">Projects</div>
-      <div class="projectsContainer">
-
-        <div class="project">
-          <div class="projectName">1.Chat App</div>
-          <div class="projectImageContainer">
-            <img src="./assets/images/chat.png" alt="Chat App" class="projectImage" />
+      <!-- //@ Skills Section -->
+      <div id="skillsSection" class="skills">
+        <div class="skillTitle">Skills</div>
+        <div class="skillsContainer">
+          <div class="skill">
+            <img
+              src="./assets/images/html.webp"
+              alt="Html"
+              class="skillImage"
+            />
+            <div class="skillName">HTML</div>
           </div>
-          <div class="projectInfo">
-            <div class="projectLinks">
-              <a href="https://github.com/naveen0-0/converse_client" target="_blank" title='View Code' class="projectLink">
-                <img src="./assets/images/github.png" alt="Github" />
-                <div>Code</div>
-              </a>
-              <a href="https://converse-1910.netlify.app" target="_blank" title='Go to Site' class="projectLink">
-                <img src="./assets/images/live.png" alt="Live" />
-                <div>Live</div>
-              </a>
+
+          <div class="skill">
+            <img src="./assets/images/css.webp" alt="Css" class="skillImage" />
+            <div class="skillName">CSS</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/javascript.webp"
+              alt="Javascript"
+              class="skillImage"
+            />
+            <div class="skillName">JavaScript</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/bootstrap.webp"
+              alt="Bootstrap"
+              class="skillImage"
+            />
+            <div class="skillName">Bootstrap</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/jquery.webp"
+              alt="Jquery"
+              class="skillImage"
+            />
+            <div class="skillName">jQuery</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/sass.webp"
+              alt="Sass"
+              class="skillImage"
+            />
+            <div class="skillName">Sass</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/react.webp"
+              alt="React"
+              class="skillImage"
+            />
+            <div class="skillName">React</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/redux.webp"
+              alt="Redux"
+              class="skillImage"
+            />
+            <div class="skillName">Redux</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/nodejs.webp"
+              alt="NodeJs"
+              class="skillImage"
+            />
+            <div class="skillName">Node.js</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/express.webp"
+              alt="ExpressJs"
+              class="skillImage"
+            />
+            <div class="skillName">Express.js</div>
+          </div>
+
+          <div class="skill">
+            <img
+              src="./assets/images/mongodb.webp"
+              alt="MongoDB"
+              class="skillImage"
+            />
+            <div class="skillName">MongoDB</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //@ Projects -->
+      <div id="projectsSection" class="projects">
+        <div class="projectsTitle">Projects</div>
+        <div class="projectsContainer">
+          <div class="project">
+            <div class="projectName">1.Chat App</div>
+            <div class="projectImageContainer">
+              <img
+                src="./assets/images/chat.webp"
+                alt="Chat App"
+                class="projectImage"
+              />
             </div>
-            <div class="techContainer">
-              <div class="techUsed">Tech used</div>
-              <div class="techs">
-                <div class="tech">HTML</div>
-                <div class="tech">CSS</div>
-                <div class="tech">Javascript</div>
-                <div class="tech">React</div>
-                <div class="tech">Redux</div>
-                <div class="tech">Nodejs</div>
-                <div class="tech">ExpressJs</div>
-                <div class="tech">MongoDB</div>           
-                <div class="tech">Socket.IO</div>           
+            <div class="projectInfo">
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/naveen0-0/converse_client"
+                  target="_blank"
+                  title="View Code"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/github.webp" alt="Github" />
+                  <div>Code</div>
+                </a>
+                <a
+                  href="https://converse-1910.netlify.app"
+                  target="_blank"
+                  title="Go to Site"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/live.webp" alt="Live" />
+                  <div>Live</div>
+                </a>
+              </div>
+              <div class="techContainer">
+                <div class="techUsed">Tech used</div>
+                <div class="techs">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascript</div>
+                  <div class="tech">React</div>
+                  <div class="tech">Redux</div>
+                  <div class="tech">Nodejs</div>
+                  <div class="tech">ExpressJs</div>
+                  <div class="tech">MongoDB</div>
+                  <div class="tech">Socket.IO</div>
+                </div>
+              </div>
+              <div class="extraprojectinfo">
+                <div class="extraprojectinfotitle">
+                  Features & Functionality
+                </div>
+                <ol class="orderedlist">
+                  <li>Authentication Setup (SignUp and Login).</li>
+                  <li>First Signup and create an account.</li>
+                  <li>You will be redirected to the login page.</li>
+                  <li>Login with your credentials.</li>
+                  <li>
+                    Go to the "THIRD" tab (Add Friend tab) and search for you
+                    friend.
+                  </li>
+                  <li>
+                    Hit the send button to send a friend request (Create another
+                    user in a private window to simulate this experience).
+                  </li>
+                  <li>
+                    Your friend will receive your friend request (which can be
+                    "ACCEPTED" or "DECLINED").
+                  </li>
+                  <li>
+                    If accepted, Your friend will be added in your friends list
+                    in the first tab.
+                  </li>
+                  <li>
+                    You can send messages back and forth with your friend.
+                  </li>
+                  <li>
+                    In the second tab, you can enter a group name and create a
+                    group.
+                  </li>
+                  <li>
+                    And in the top right, you can click the icon and your friend
+                    to the group and have group conversations.
+                  </li>
+                  <li>
+                    By the way, LOGOUT button is in the bottom left corner.
+                  </li>
+                </ol>
               </div>
             </div>
-            <div class="extraprojectinfo">
-              <div class="extraprojectinfotitle">Features & Functionality</div>
-              <ol class="orderedlist">
-                <li>Authentication Setup (SignUp and Login).</li>
-                <li>First Signup and create an account.</li>
-                <li>You will be redirected to the login page.</li>
-                <li>Login with your credentials.</li>
-                <li>Go to the "THIRD" tab (Add Friend tab) and search for you friend.</li>
-                <li>Hit the send button to send a friend request (Create another user in a private window to simulate this experience).</li>
-                <li>Your friend will receive your friend request (which can be "ACCEPTED" or "DECLINED").</li>
-                <li>If accepted, Your friend will be added in your friends list in the first tab.</li>
-                <li>You can send messages back and forth with your friend.</li>
-                <li>In the second tab, you can enter a group name and create a group.</li>
-                <li>And in the top right, you can click the icon and your friend to the group and have group conversations.</li>
-                <li>By the way, LOGOUT button is in the bottom left corner.</li>
-              </ol>
-            </div>
           </div>
-        </div>
 
-
-        <div class="project">
-          <div class="projectName">2.Blog App</div>
-          <div class="projectImageContainer">
-            <img src="./assets/images/blog.png" alt="Blog App" class="projectImage" />
-          </div>
-          <div class="projectInfo">
-            <div class="projectLinks">
-              <a href="https://github.com/naveen0-0/realblogclient" target="_blank" title='View Code' class="projectLink">
-                <img src="./assets/images/github.png" alt="Github" />
-                <div>Code</div>
-              </a>
-              <a href="https://blogreal.netlify.app" target="_blank" title='Go to Site' class="projectLink">
-                <img src="./assets/images/live.png" alt="Live" />
-                <div>Live</div>
-              </a>
+          <div class="project">
+            <div class="projectName">2.Blog App</div>
+            <div class="projectImageContainer">
+              <img
+                src="./assets/images/blog.webp"
+                alt="Blog App"
+                class="projectImage"
+              />
             </div>
-            <div class="techContainer">
-              <div class="techUsed">Tech used</div>
-              <div class="techs">
-                <div class="tech">HTML</div>
-                <div class="tech">CSS</div>
-                <div class="tech">Javascript</div>
-                <div class="tech">React</div>
-                <div class="tech">Redux</div>
-                <div class="tech">Nodejs</div>
-                <div class="tech">ExpressJs</div>
-                <div class="tech">MongoDB</div>           
+            <div class="projectInfo">
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/naveen0-0/realblogclient"
+                  target="_blank"
+                  title="View Code"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/github.webp" alt="Github" />
+                  <div>Code</div>
+                </a>
+                <a
+                  href="https://blogreal.netlify.app"
+                  target="_blank"
+                  title="Go to Site"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/live.webp" alt="Live" />
+                  <div>Live</div>
+                </a>
+              </div>
+              <div class="techContainer">
+                <div class="techUsed">Tech used</div>
+                <div class="techs">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascript</div>
+                  <div class="tech">React</div>
+                  <div class="tech">Redux</div>
+                  <div class="tech">Nodejs</div>
+                  <div class="tech">ExpressJs</div>
+                  <div class="tech">MongoDB</div>
+                </div>
+              </div>
+              <div class="extraprojectinfo">
+                <div class="extraprojectinfotitle">
+                  Features & Functionality
+                </div>
+                <ol class="orderedlist">
+                  <li>You will be presented with the list of all blogs.</li>
+                  <li>
+                    You can click on the blog you are interested in and read
+                    more.
+                  </li>
+                  <li>
+                    You have to create an account if you want to create a blog.
+                  </li>
+                  <li>Click on the signup button in the navbar.</li>
+                  <li>First Signup and create an account.</li>
+                  <li>You will be redirected to the login page.</li>
+                  <li>Login with your credentials.</li>
+                  <li>
+                    You will be redirected to the homepage (Logged In Version).
+                  </li>
+                  <li>
+                    You can see the newblog and profile buttons in the navbar.
+                  </li>
+                  <li>
+                    You can go to the newblog page and enter all the info and
+                    press Upload.
+                  </li>
+                  <li>
+                    You will get a message saying "Blog created successfully".
+                  </li>
+                  <li>
+                    You can go to the homepage and see the article you have just
+                    created.
+                  </li>
+                  <li>The Profile tab is self explanatory</li>
+                  <li>Sign Out button is also in the page.</li>
+                </ol>
               </div>
             </div>
-            <div class="extraprojectinfo">
-              <div class="extraprojectinfotitle">Features & Functionality</div>
-              <ol class="orderedlist">
-                <li>You will be presented with the list of all blogs.</li>
-                <li>You can click on the blog you are interested in and read more.</li>
-                <li>You have to create an account if you want to create a blog.</li>
-                <li>Click on the signup button in the navbar.</li>
-                <li>First Signup and create an account.</li>
-                <li>You will be redirected to the login page.</li>
-                <li>Login with your credentials.</li>
-                <li>You will be redirected to the homepage (Logged In Version).</li>
-                <li>You can see the newblog and profile buttons in the navbar.</li>
-                <li>You can go to the newblog page and enter all the info and press Upload.</li>
-                <li>You will get a message saying "Blog created successfully".</li>
-                <li>You can go to the homepage and see the article you have just created.</li>
-                <li>The Profile tab is self explanatory</li>
-                <li>Sign Out button is also in the page.</li>
-              </ol>
-            </div>
           </div>
-        </div>
-        
 
-        <div class="project">
-          <div class="projectName">3.Movie App</div>
-          <div class="projectImageContainer">
-            <img src="./assets/images/movie.png" alt="Movie App" class="projectImage" />
-          </div>
-          <div class="projectInfo">
-            <div class="projectLinks">
-              <a href="https://github.com/naveen0-0/newmovie" target="_blank" title='View Code' class="projectLink">
-                <img src="./assets/images/github.png" alt="Github" />
-                <div>Code</div>
-              </a>
-              <a href="https://mynori.netlify.app" target="_blank" title='Go to Site' class="projectLink">
-                <img src="./assets/images/live.png" alt="Live" />
-                <div>Live</div>
-              </a>
+          <div class="project">
+            <div class="projectName">3.Movie App</div>
+            <div class="projectImageContainer">
+              <img
+                src="./assets/images/movie.webp"
+                alt="Movie App"
+                class="projectImage"
+              />
             </div>
-            <div class="techContainer">
-              <div class="techUsed">Tech used</div>
-              <div class="techs">
-                <div class="tech">HTML</div>
-                <div class="tech">CSS</div>
-                <div class="tech">Javascript</div>
-                <div class="tech">React</div>         
+            <div class="projectInfo">
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/naveen0-0/newmovie"
+                  target="_blank"
+                  title="View Code"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/github.webp" alt="Github" />
+                  <div>Code</div>
+                </a>
+                <a
+                  href="https://mynori.netlify.app"
+                  target="_blank"
+                  title="Go to Site"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/live.webp" alt="Live" />
+                  <div>Live</div>
+                </a>
+              </div>
+              <div class="techContainer">
+                <div class="techUsed">Tech used</div>
+                <div class="techs">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascript</div>
+                  <div class="tech">React</div>
+                </div>
+              </div>
+              <div class="extraprojectinfo">
+                <div class="extraprojectinfotitle">
+                  Features & Functionality
+                </div>
+                <ol class="orderedlist">
+                  <li>
+                    You will land on the Movies Tab on the initial load of the
+                    website.
+                  </li>
+                  <li>
+                    You will get a list of movies and you can click any of the
+                    movie to see more information regarding that movie.
+                  </li>
+                  <li>
+                    You can change to a different category in the categories
+                    section.
+                  </li>
+                  <li>
+                    You can search any movie you want in the last category in
+                    the categories section.
+                  </li>
+                  <li>
+                    You can go to the Tv Shows Section and do the same thing as
+                    above regarding various categories and search option.
+                  </li>
+                  <li>
+                    And on top of that, You can deep into each season and each
+                    episode as well to read more information.
+                  </li>
+                  <li>The Persons Tab is Self Explanatory.</li>
+                </ol>
               </div>
             </div>
-            <div class="extraprojectinfo">
-              <div class="extraprojectinfotitle">Features & Functionality</div>
-              <ol class="orderedlist">
-                <li>You will land on the Movies Tab on the initial load of the website.</li>
-                <li>You will get a list of movies and you can click any of the movie to see more information regarding that movie.</li>
-                <li>You can change to a different category in the categories section.</li>
-                <li>You can search any movie you want in the last category in the categories section.</li>
-                <li>You can go to the Tv Shows Section and do the same thing as above regarding various categories and search option.</li>
-                <li>And on top of that, You can deep into each season and each episode as well to read more information.</li>
-                <li>The Persons Tab is Self Explanatory.</li>
-              </ol>
-            </div>
           </div>
-        </div>
 
-        <div class="project">
-          <div class="projectName">4.E-commerce Shop</div>
-          <div class="projectImageContainer">
-            <img src="./assets/images/shop.png" alt="FullStack Shop" class="projectImage" />
-          </div>
-          <div class="projectInfo">
-            <div class="projectLinks">
-              <a href="https://github.com/naveen0-0/ecommerceclient" target="_blank" title='View Code' class="projectLink">
-                <img src="./assets/images/github.png" alt="Github" />
-                <div>Code</div>
-              </a>
-              <a href="https://xhoppie.netlify.app" target="_blank" title='Go to Site' class="projectLink">
-                <img src="./assets/images/live.png" alt="Live" />
-                <div>Live</div>
-              </a>
+          <div class="project">
+            <div class="projectName">4.E-commerce Shop</div>
+            <div class="projectImageContainer">
+              <img
+                src="./assets/images/shop.webp"
+                alt="FullStack Shop"
+                class="projectImage"
+              />
             </div>
-            <div class="techContainer">
-              <div class="techUsed">Tech used</div>
-              <div class="techs">
-                <div class="tech">HTML</div>
-                <div class="tech">CSS</div>
-                <div class="tech">Javascript</div>
-                <div class="tech">React</div>         
+            <div class="projectInfo">
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/naveen0-0/ecommerceclient"
+                  target="_blank"
+                  title="View Code"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/github.webp" alt="Github" />
+                  <div>Code</div>
+                </a>
+                <a
+                  href="https://xhoppie.netlify.app"
+                  target="_blank"
+                  title="Go to Site"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/live.webp" alt="Live" />
+                  <div>Live</div>
+                </a>
+              </div>
+              <div class="techContainer">
+                <div class="techUsed">Tech used</div>
+                <div class="techs">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascript</div>
+                  <div class="tech">React</div>
+                </div>
+              </div>
+              <div class="extraprojectinfo">
+                <div class="extraprojectinfotitle">
+                  Features & Functionality
+                </div>
+                <ol class="orderedlist">
+                  <li>
+                    You will be presented with list of all products on the
+                    intial load.
+                  </li>
+                  <li>
+                    You can click on the product to read more information about
+                    that product.
+                  </li>
+                  <li>
+                    In the top right corner, Click the person icon and go to the
+                    sign up page to create an account.
+                  </li>
+                  <li>
+                    Now, go to the login page and login in with your
+                    credentials.
+                  </li>
+                  <li>
+                    Now, you can go into each product and add products to your
+                    cart.
+                  </li>
+                  <li>
+                    Add some sample products and go into your cart by clicking
+                    the cart icon in the navbar.
+                  </li>
+                  <li>
+                    You can increase or decrease the number of products of any
+                    product in the cart.
+                  </li>
+                </ol>
               </div>
             </div>
-            <div class="extraprojectinfo">
-              <div class="extraprojectinfotitle">Features & Functionality</div>
-              <ol class="orderedlist">
-                <li>You will be presented with list of all products on the intial load.</li>
-                <li>You can click on the product to read more information about that product.</li>
-                <li>In the top right corner, Click the person icon and go to the sign up page to create an account.</li>
-                <li>Now, go to the login page and login in with your credentials.</li>
-                <li>Now, you can go into each product and add products to your cart.</li>
-                <li>Add some sample products and go into your cart by clicking the cart icon in the navbar.</li>
-                <li>You can increase or decrease the number of products of any product in the cart.</li>
-              </ol>
-            </div>
           </div>
-        </div>
 
-        <div class="project">
-          <div class="projectName">5.News App</div>
-          <div class="projectImageContainer">
-            <img src="./assets/images/news.png" alt="News App" class="projectImage" />
-          </div>
-          <div class="projectInfo">
-            <div class="projectLinks">
-              <a href="https://github.com/naveen0-0/news" target="_blank" title='View Code' class="projectLink">
-                <img src="./assets/images/github.png" alt="Github" />
-                <div>Code</div>
-              </a>
-              <a href="https://newsroll.netlify.app" target="_blank" title='Go to Site' class="projectLink">
-                <img src="./assets/images/live.png" alt="Live" />
-                <div>Live</div>
-              </a>
+          <div class="project">
+            <div class="projectName">5.News App</div>
+            <div class="projectImageContainer">
+              <img
+                src="./assets/images/news.webp"
+                alt="News App"
+                class="projectImage"
+              />
             </div>
-            <div class="techContainer">
-              <div class="techUsed">Tech used</div>
-              <div class="techs">
-                <div class="tech">HTML</div>
-                <div class="tech">CSS</div>
-                <div class="tech">Javascript</div>
-                <div class="tech">React</div>         
+            <div class="projectInfo">
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/naveen0-0/news"
+                  target="_blank"
+                  title="View Code"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/github.webp" alt="Github" />
+                  <div>Code</div>
+                </a>
+                <a
+                  href="https://newsroll.netlify.app"
+                  target="_blank"
+                  title="Go to Site"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/live.webp" alt="Live" />
+                  <div>Live</div>
+                </a>
+              </div>
+              <div class="techContainer">
+                <div class="techUsed">Tech used</div>
+                <div class="techs">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascript</div>
+                  <div class="tech">React</div>
+                </div>
+              </div>
+              <div class="extraprojectinfo">
+                <div class="extraprojectinfotitle">
+                  Features & Functionality
+                </div>
+                <ol class="orderedlist">
+                  <li>It is a simple news app built with React.</li>
+                  <li>
+                    Click on the article and you will be redirected to the news
+                    article.
+                  </li>
+                  <li>
+                    Press the hamburger icon to open the menu from the left.
+                  </li>
+                  <li>Select any category you want.</li>
+                  <li>Enjoy the articles from that category.</li>
+                </ol>
               </div>
             </div>
-            <div class="extraprojectinfo">
-              <div class="extraprojectinfotitle">Features & Functionality</div>
-              <ol class="orderedlist">
-                <li>It is a simple news app built with React.</li>
-                <li>Click on the article and you will be redirected to the news article.</li>
-                <li>Press the hamburger icon to open the menu from the left.</li>
-                <li>Select any category you want.</li>
-                <li>Enjoy the articles from that category.</li>
-              </ol>
-            </div>
           </div>
-        </div>
 
-        <div class="project">
-          <div class="projectName">6.Covid Tracker</div>
-          <div class="projectImageContainer">
-            <img src="./assets/images/covid.png" alt="Covid Tracker" class="projectImage" />
-          </div>
-          <div class="projectInfo">
-            <div class="projectLinks">
-              <a href="https://github.com/naveen0-0/trackerc19" target="_blank" title='View Code' class="projectLink">
-                <img src="./assets/images/github.png" alt="Github" />
-                <div>Code</div>
-              </a>
-              <a href="https://trackerc19.netlify.app" target="_blank" title='Go to Site' class="projectLink">
-                <img src="./assets/images/live.png" alt="Live" />
-                <div>Live</div>
-              </a>
+          <div class="project">
+            <div class="projectName">6.Covid Tracker</div>
+            <div class="projectImageContainer">
+              <img
+                src="./assets/images/covid.webp"
+                alt="Covid Tracker"
+                class="projectImage"
+              />
             </div>
-            <div class="techContainer">
-              <div class="techUsed">Tech used</div>
-              <div class="techs">
-                <div class="tech">HTML</div>
-                <div class="tech">CSS</div>
-                <div class="tech">Javascript</div>
-                <div class="tech">React</div>         
+            <div class="projectInfo">
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/naveen0-0/trackerc19"
+                  target="_blank"
+                  title="View Code"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/github.webp" alt="Github" />
+                  <div>Code</div>
+                </a>
+                <a
+                  href="https://trackerc19.netlify.app"
+                  target="_blank"
+                  title="Go to Site"
+                  class="projectLink"
+                >
+                  <img src="./assets/images/live.webp" alt="Live" />
+                  <div>Live</div>
+                </a>
+              </div>
+              <div class="techContainer">
+                <div class="techUsed">Tech used</div>
+                <div class="techs">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascript</div>
+                  <div class="tech">React</div>
+                </div>
+              </div>
+              <div class="extraprojectinfo">
+                <div class="extraprojectinfotitle">
+                  Features & Functionality
+                </div>
+                <ol class="orderedlist">
+                  <li>React + API Integration.</li>
+                  <li>
+                    You can get all the latest information regarding recent
+                    covid pandemic cases in each country.
+                  </li>
+                  <li>
+                    Select the country you want to see the information of.
+                  </li>
+                </ol>
               </div>
             </div>
-            <div class="extraprojectinfo">
-              <div class="extraprojectinfotitle">Features & Functionality</div>
-              <ol class="orderedlist">
-                <li>React + API Integration.</li>
-                <li>You can get all the latest information regarding recent covid pandemic cases in each country.</li>
-                <li>Select the country you want to see the information of.</li>
-              </ol>
-            </div>
           </div>
         </div>
+      </div>
 
+      <!-- //@ Contact Section -->
+      <div class="formContainer" id="contactSection">
+        <div class="formTitle">Contact Form</div>
+
+        <form method="POST" class="form" action="#" id="form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+            class="name"
+            id="username"
+            autocomplete="off"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="email"
+            id="email"
+            autocomplete="off"
+          />
+
+          <textarea
+            name="subject"
+            cols="30"
+            rows="2"
+            placeholder="Enter the Subject"
+            required
+            class="subject"
+            id="subject"
+            autocomplete="off"
+          ></textarea>
+
+          <textarea
+            name="message"
+            cols="30"
+            rows="5"
+            placeholder="Enter the Message"
+            required
+            class="message"
+            id="message"
+            autocomplete="off"
+          ></textarea>
+
+          <button type="submit" class="formsubmit" id="formSubmit">
+            <div class="submittext" id="submittext">Send</div>
+            <div class="loader" id="loader"></div>
+          </button>
+        </form>
+
+        <div class="mediaLinks">
+          <a
+            href="https://www.facebook.com/naveen12309/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/images/facebook.webp" alt="Facebook" />
+          </a>
+
+          <a
+            href="https://twitter.com/Naveen87763128"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/images/twitter.webp" alt="Twitter" />
+          </a>
+
+          <a
+            href="https://github.com/naveen0-0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/images/github.webp" alt="Github" />
+          </a>
+        </div>
+
+        <div class="success" id="success">
+          <img src="./assets/images/checked.webp" alt="checked" />
+          <div class="msg">Message Successfully Sent</div>
+        </div>
+        <div class="error" id="error">
+          <img src="./assets/images/cancel.webp" alt="Cancel" />
+          <div class="msg">Error Occured</div>
+        </div>
       </div>
     </div>
-
-    <!-- //@ Contact Section -->
-    <div class="formContainer" id="contactSection">
-      <div class="formTitle">Contact Form</div>
-    
-      <form method="POST" class="form" action="#" id="form">
-        <input 
-          type="text" 
-          name="name" 
-          placeholder="Enter your name" 
-          required 
-          class="name"
-          id="username"
-          autocomplete="off"
-        />
-
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Enter your email" 
-          required 
-          class="email"
-          id="email"
-          autocomplete="off"
-        />
-
-        <textarea 
-          name="subject" 
-          cols="30" 
-          rows="2" 
-          placeholder="Enter the Subject" 
-          required 
-          class="subject"
-          id="subject"
-          autocomplete="off"
-        ></textarea>
-
-        <textarea 
-          name="message" 
-          cols="30" 
-          rows="5" 
-          placeholder="Enter the Message" 
-          required 
-          class="message"
-          id="message"
-          autocomplete="off"
-        ></textarea>
-        
-        <button type='submit' class="formsubmit" id="formSubmit">
-          <div class="submittext" id="submittext">Send</div>
-          <div class="loader" id="loader"></div>
-        </button>
-      </form>
-    
-      <div class="mediaLinks">
-        <a href="https://www.facebook.com/naveen12309/" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/facebook.png" alt="Facebook" />
-        </a>
-
-        <a href="https://twitter.com/Naveen87763128" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/twitter.png" alt="Twitter" />
-        </a>
-
-        <a href="https://github.com/naveen0-0" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/github.png" alt="Github" />
-        </a>
-      </div>
-
-
-      <div class="success" id="success">
-        <img src="./assets/images/checked.png" alt="checked" >
-        <div class="msg">Message Successfully Sent</div>
-      </div>
-      <div class="error" id="error">
-        <img src="./assets/images/cancel.png" alt="Cancel" >
-        <div class="msg">Error Occured</div>
-      </div>  
-
-    </div>
-</div>
-</body>
+  </body>
 </html>
