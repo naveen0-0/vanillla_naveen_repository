@@ -310,7 +310,7 @@ a {
   margin: auto;
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-  gap: 20px;
+  gap: 10px;
 }
 
 .projectName {
@@ -610,6 +610,9 @@ a {
   .projectsContainer {
     width: 95%;
     display: block;
+  }
+  
+  .project{
     margin: 10px auto;
   }
 }
