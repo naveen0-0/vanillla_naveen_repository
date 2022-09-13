@@ -310,7 +310,7 @@ a {
   margin: auto;
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-  gap: 10px;
+  gap: 15px;
 }
 
 .projectName {
@@ -613,6 +613,6 @@ a {
   }
   
   .project{
-    margin: 10px auto;
+    margin: 15px auto;
   }
 }
